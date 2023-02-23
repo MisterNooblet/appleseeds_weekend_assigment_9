@@ -27,6 +27,8 @@ const Game = () => {
         }
         if (game.length > 0) {
             pickRandomImage()
+        } else {
+            setGameOver(true)
         }
     }
 
