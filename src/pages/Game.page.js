@@ -58,10 +58,10 @@ const Game = () => {
                 {!gameOver ? <GameTop wrongGuesses={wrongGuesses} rightGuesses={rightGuesses} /> : null}
             </div>
             <div className='game_main'>
-                {!gameOver ? <GameMain name={currentGuess.name} image={currentGuess.image} /> : <GameOver wrongGuesses={wrongGuesses} setGameOver={setGameOver} setWrongGuesses={setWrongGuesses} setRightGuesses={setRightGuesses} />}
+                {!gameOver ? <GameMain image={currentGuess.image} /> : <GameOver wrongGuesses={wrongGuesses} setGameOver={setGameOver} setWrongGuesses={setWrongGuesses} setRightGuesses={setRightGuesses} />}
             </div>
             <div className='game_bottom'>
-                {!gameOver ? <GameBottom handleGuess={handleGuess} /> : null}
+                {!gameOver ? <GameBottom handleGuess={handleGuess} name={currentGuess.name} /> : null}
             </div>
         </section>
     )

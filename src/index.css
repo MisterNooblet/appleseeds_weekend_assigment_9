@@ -58,19 +58,30 @@ a {
   font-weight: bold;
 }
 img {
-  width: 35vmin;
-  height: 35vmin;
+  width: 70vmin;
+  height: 70vmin;
   object-fit: contain;
   image-rendering: optimizeQuality;
   border-radius: 15px;
 }
 .game_top,
 .game_bottom {
-  width: 35vmin;
+  width: 50vmin;
   display: flex;
   justify-content: space-between;
 }
 .game_main {
   text-align: center;
   margin: 10px 0;
+}
+button {
+  padding: 10px;
+  background-color: #fc7100b6;
+  border: 1px solid black;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+button:hover {
+  background-color: #fc7100;
 }
