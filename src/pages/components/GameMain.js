@@ -1,13 +1,12 @@
 import React from 'react'
 
-const GameMain = () => {
+const GameMain = ({ image, name }) => {
     return (
         <>
-            <div className='game_main'>
-                <img src={currentGuess.image} alt={currentGuess.name} />
-                <h3>{currentGuess.name}</h3>
-            </div>
+            <img src={image} alt={name} />
+            <h3>{name}</h3>
         </>
+
     )
 }
 

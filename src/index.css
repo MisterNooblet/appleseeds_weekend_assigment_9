@@ -10,6 +10,8 @@ html {
 
 body {
   margin: 0;
+  background-color: #03001c;
+  color: #b6eada;
 }
 
 #root {
@@ -24,19 +26,51 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: fit-content;
+  margin: auto;
 }
 
 ul {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
+nav,
 footer {
   display: flex;
   justify-content: center;
+  padding: 1vh 0;
+  background-color: #301e67;
 }
+
 footer ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+a:visited {
+  color: #b6eada;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+img {
+  width: 35vmin;
+  height: 35vmin;
+  object-fit: contain;
+  image-rendering: optimizeQuality;
+  border-radius: 15px;
+}
+.game_top,
+.game_bottom {
+  width: 35vmin;
+  display: flex;
+  justify-content: space-between;
+}
+.game_main {
+  text-align: center;
+  margin: 10px 0;
 }
